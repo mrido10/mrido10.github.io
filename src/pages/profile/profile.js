@@ -4,10 +4,10 @@ import Navbar from '../../components/navbar'
 class Profile extends Component {
     render () {
         return(
-            <>
-            <Navbar />
-            <div>Profile Page</div>
-            </>
+            <div id='container'>
+                <Navbar />
+                <div>Profile Page</div>
+            </div>
         )
     }
 }

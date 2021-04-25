@@ -1,13 +1,35 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/font/Montserrat-Regular.ttf),
+      url(./assets/font/Montserrat-SemiBold.ttf),
+      url(./assets/font/Montserrat-SemiBoldItalic.ttf),
+      url(./assets/font/Montserrat-Thin.ttf),
+      url(./assets/font/Montserrat-ThinItalic.ttf), 
+      url(./assets/font/Montserrat-Black.ttf),
+      url(./assets/font/Montserrat-BlackItalic.ttf),
+      url(./assets/font/Montserrat-Bold.ttf),
+      url(./assets/font/Montserrat-BoldItalic.ttf),
+      url(./assets/font/Montserrat-ExtraBold.ttf),
+      url(./assets/font/Montserrat-ExtraBoldItalic.ttf),
+      url(./assets/font/Montserrat-ExtraLight.ttf),
+      url(./assets/font/Montserrat-ExtraLightItalic.ttf),
+      url(./assets/font/Montserrat-Light.ttf),
+      url(./assets/font/Montserrat-Italic.ttf),
+      url(./assets/font/Montserrat-LightItalic.ttf),
+      url(./assets/font/Montserrat-Medium.ttf),
+      url(./assets/font/Montserrat-MediumItalic.ttf),  
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: #333;
 }

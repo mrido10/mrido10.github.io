@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 
+import './navbar.css'
+
 class Navbar extends Component {
     state = {
         navbar: [
@@ -13,7 +15,6 @@ class Navbar extends Component {
     NavbarItem = (value) => {
         let linkTo = '/' + value.toLowerCase();
         if (linkTo === '/home') linkTo = ''
-        console.log(linkTo)
         return(
             <Link to={linkTo}>
                 <div className='item'>{value}</div>
@@ -23,14 +24,15 @@ class Navbar extends Component {
 
     render() {
         return(
-            <>
-            <div id='logo'>LOGO</div>
-            {
-                this.state.navbar.map((val) => {
-                    return this.NavbarItem(val)
-                })
-            }
-            </>
+            <div id='navbarBox'>
+                <div id='itemBoxNavbar'>
+                {
+                    this.state.navbar.map((val) => {
+                        return this.NavbarItem(val)
+                    })
+                }
+                </div>
+            </div>
         )
     }
 }
