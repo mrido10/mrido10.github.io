@@ -1,7 +1,9 @@
 #navbarBox {
+    position: fixed;
+    z-index: 3;
     width: 100%;
     height: 80px;
-    padding: 0 50px;
+    padding: 0 100px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row; 

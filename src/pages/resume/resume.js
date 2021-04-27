@@ -5,9 +5,8 @@ import './resume.css'
 class Resume extends Component {
     render () {
         return(
-            <div id='container'>
+            <div id='container2'>
                 <Navbar />
-                <div>Resume Page</div>
             </div>
         )
     }
