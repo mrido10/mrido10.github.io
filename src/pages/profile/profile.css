@@ -1,3 +1,9 @@
+/* color */
+
+svg {color: #1F6FEB;}
+/* h2 {color: #238636;} */
+
+/* container style */
 #container2 {
     background-color: #21252B;
     width: 100%;
@@ -9,11 +15,7 @@
     width: 12px;
     height: 12px;
 }
-    
-/* ::-webkit-scrollbar-track {
-    border: 1px solid #3e4650;
-} */
-    
+   
 ::-webkit-scrollbar-thumb {
     background: #282d33;  
     border-radius: 10px;
@@ -26,16 +28,6 @@
 #container2 #navbarBox {
     background-color: #1a1d22;
 }
-
-/* #container2 #itemBoxNavbar a {
-    color: #333;
-}
-
-#container2 #itemBoxNavbar .item:hover {
-    transition: 0.3s;
-    background-color: rgba(51, 51, 51, 0.7);
-    color: #fff;
-} */
 
 #container2 #aboutMe, #container2 #education {
     width: 100%;
@@ -52,12 +44,15 @@
     color: #fff;
 }
 
+/* aboutme style */
 .contentBox.aboutMeBox {
     padding-top: 130px;
-    /* background-color: aqua; */
 }
 
 .titleBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 35%;
     height: auto;
     padding: 30px;
@@ -98,6 +93,118 @@
     margin-left: 5px;
 }
 
+/* education style */
+.eduBox {
+    background-color: #1a1d22;
+}
+
+.eduBox .contentBox2 .subtitle {
+    display: grid;
+    grid-template-columns: 90px auto 25px 80px;
+    grid-template-rows: 30px;
+    column-gap: 10px;
+}
+
+.eduBox .contentBox2 .subtitle.in {
+    grid-template-columns: 120px auto 25px 150px;
+}
+
+.eduBox .contentBox2 .subtitle .lineStretch {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    border-top: 3px solid #1F6FEB;
+    top: 15px;
+}
+
+.eduBox .contentBox2 .subtitle .boxRounded {
+    position: relative;
+    width: 26px;
+    height: 15px;
+    border-right: 3px solid #1F6FEB;
+    border-top: 3px solid #1F6FEB;
+    border-radius: 0 10px 0 0;
+    left: -15px;
+    top: 15px;
+}
+
+.eduBox .contentBox2 .subtitle.in .boxRounded {
+    height: 28px;
+}
+
+/* .eduBox .contentBox2 .subtitle div {
+    background-color: #2a3036;
+} */
+
+/* formal */
+.eduBox .contentBox2 .contentBox3 {
+    display: grid;
+    grid-template-columns: auto 25px 80px;
+    grid-template-rows: 25px 45px 25px 45px 25px 45px 25px 45px;
+    column-gap: 10px;
+    font-size: 1.2em;
+}
+
+.eduBox .contentBox2 .contentBox3 .school {
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.eduBox .contentBox2 .contentBox3 .line {
+    text-align: center;
+}
+
+.eduBox .contentBox2 .contentBox3 .line div {
+    position: relative;
+    display: inline-block;
+    width: 3px;
+    height: 49px;
+    background-color: #1F6FEB;
+    margin: 0 auto;
+    top: -2px;
+    z-index: 1;
+}
+
+/* .eduBox .contentBox2 .contentBox3 div {
+    background-color: #2a3036;
+} */
+
+.eduBox .contentBox2 .contentBox3 svg {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    /* padding: 2px; */
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.eduBox .contentBox2 .contentBox3 .year {
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* informal */
+.eduBox .contentBox2 .subtitle.in {
+    margin-top: 50px;
+}
+.eduBox .contentBox2 .contentBox3.informalEdu {
+    grid-template-columns: auto 25px 150px;
+    grid-template-rows: 60px
+}
+
+.eduBox .contentBox2 .contentBox3.informalEdu .school {
+    padding: 13px 10px;
+}
+
+.eduBox .contentBox2 .contentBox3.informalEdu .point {
+    padding: 15px 0;
+}
+
+.eduBox .contentBox2 .contentBox3.informalEdu .year {
+    padding: 12px 100;
+}
 
 
 

@@ -1,4 +1,4 @@
-import { faCalendar, faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faCalendar, faDotCircle, faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faGlobeAmericas, faMapMarkedAlt, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component } from 'react'
@@ -16,12 +16,14 @@ class Profile extends Component {
             {icon: faMapMarkedAlt, title: 'Address', content: 'Tangerang Selatan, Indonesia'},
         ],
         formalEdu: [
-            {year: '2014-2019', content: 'Universitas Jambi, (S1) Program Studi Fisika'},
-            {year: '2011-2014', content: 'SMAN 3 Merangin'},
-            {year: '2008-2011', content: 'SMPN 23 Merangin'},
+            {year: '2019', school: 'Universitas Jambi, (S1) Program Studi Fisika'},
+            {year: '2014', school: 'SMAN 3 Merangin'},
+            {year: '2011', school: 'SMPN 23 Merangin'},
+            {year: '2008', school: 'SDN 249 / VI Rawa Jaya I'},
+            {year: '2002'},
         ],
         inFormalEdu: [
-            {year: 'March 2020 - May 2020', content: 'G2Academy (Fullstack Programmer Bootcamp)'}
+            {year: 'March 2020 - May 2020', school: 'G2Academy (Fullstack Programmer Bootcamp)'}
         ]
     }
 
@@ -35,16 +37,35 @@ class Profile extends Component {
         )
     }
 
-    showEducationn = val => {
+    showFormalEducation = (val, idx) => {
+        if (idx === this.state.formalEdu.length - 1) {
+            return(
+                <>
+                    <div className='empty'></div>
+                    <div className='point'><FontAwesomeIcon icon={faDotCircle} /></div>
+                    <div className='year'>{val.year}</div>           
+                </>
+            )
+        }
         return(
-            <div className='contentBox3'>
+            <>
+                <div className='empty'></div>
+                <div className='point'><FontAwesomeIcon icon={faDotCircle} /></div>
                 <div className='year'>{val.year}</div>
-                <div className='lineBox'>
-                    <div className='dot'></div>
-                    <div className='line'></div>
-                </div>
-                <div className='education'>{val.content}</div>
-            </div>
+                <div className='school'>{val.school}</div>
+                <div className='line'><div></div></div>
+                <div className='empty'></div>                
+            </>
+        )
+    }
+
+    showInformalEducation = val => {
+        return (
+            <>
+                <div className='school'>{val.school}</div>
+                <div className='point'><FontAwesomeIcon icon={faDotCircle} /></div>
+                <div className='year'>{val.year}</div>
+            </>
         )
     }
 
@@ -67,27 +88,43 @@ class Profile extends Component {
                 </div>
                 <div className='contentBox eduBox'>
                     <div className='contentBox2'>
-                        <h3 className='subTitle'>Formal</h3>
-                        <div className='contentBox2'>
+                        <div className='subtitle'>
+                            <h3 className='formalEdu'>Formal</h3>
+                            <div className='line'>
+                                <div className='lineStretch'></div>
+                            </div>
+                            <div className='line'>
+                                <div className='boxRounded'></div>
+                            </div>
+                        </div>
+                        <div className='contentBox3 formalEdu'>
                             {
-                                this.state.formalEdu.map( val => {
-                                    return this.showEducationn(val)
+                                this.state.formalEdu.map( (val, idx) => {
+                                    return this.showFormalEducation(val, idx)
                                 })
                             }
                         </div>
                         
-                        <h3 className='subTitle'>In Formal</h3>
-                        <div className='contentBox2'>
+                        <div className='subtitle in'>
+                            <h3 className='informalEdu'>In Formal</h3>
+                            <div className='line'>
+                                <div className='lineStretch'></div>
+                            </div>
+                            <div className='line'>
+                                <div className='boxRounded'></div>
+                            </div>
+                        </div>
+                        <div className='contentBox3 informalEdu'>
                             {
                                 this.state.inFormalEdu.map( val => {
-                                    return this.showEducationn(val)
+                                    return this.showInformalEducation(val)
                                 })
                             }
                         </div>
                     </div>
                     <div className='titleBox right'>
                         <h2 className='title'>My</h2>
-                        <h2 className='title'>Eductaion</h2>
+                        <h2 className='title'>Education</h2>
                     </div>
                 </div>
             </div>
