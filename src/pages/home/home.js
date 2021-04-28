@@ -17,7 +17,7 @@ class Home extends Component {
                     <p className='about'>
                         "Experienced in IT field since 2020. Skilled in Java, Golang, Javascript (React Js), Arduino, Database (mySql), HTML5, CSS3"
                     </p>
-                    <Link className='download' to="file/Muhammad_Rido_CV.pdf" target="_blank" download>Download CV</Link>
+                    <Link className='download' to="file/Muhammad_Rido_CV.pdf" target="_blank" download disabled>Download CV</Link>
                 </div>
                 
             </div>
