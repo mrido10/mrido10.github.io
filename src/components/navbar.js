@@ -1,3 +1,5 @@
+import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 
@@ -12,7 +14,7 @@ class Navbar extends Component {
         ]
     }
 
-    NavbarItem = (value) => {
+    navbarItem = (value) => {
         let linkTo = '/' + value.toLowerCase();
         if (linkTo === '/home') linkTo = ''
         return(
@@ -22,15 +24,32 @@ class Navbar extends Component {
         )
     }
 
+    handleActiveNavbarTogle = () => {
+        let togle = document.getElementById('togle')
+        let navbarBox = document.getElementById('itemBoxNavbar')
+        if (!navbarBox.className.includes('active')) {
+            navbarBox.className += ' active'
+        } else {
+            navbarBox.className = 'itemBoxNavbar'
+        }
+
+
+        
+    }
+
     render() {
         return(
             <div id='navbarBox'>
-                <div id='itemBoxNavbar'>
-                {
-                    this.state.navbar.map((val) => {
-                        return this.NavbarItem(val)
-                    })
-                }
+                <div className='togle' id='togle' onClick={this.handleActiveNavbarTogle}>
+                    <FontAwesomeIcon icon={faEllipsisH} />
+                </div>
+                <div id='itemBoxNavbar' className='itemBoxNavbar'>
+                    
+                    {
+                        this.state.navbar.map((val) => {
+                            return this.navbarItem(val)
+                        })
+                    }
                 </div>
             </div>
         )
