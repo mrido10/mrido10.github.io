@@ -8,7 +8,7 @@ class Home extends Component {
     render() {
         return(
             <>
-            <div id='container'>
+            <div id='container' onMouseUp={this.handleHideNavbar}>
                 <Navbar />
                 <div id='boxContent'>
                     <h3 className='hello'>Hello, I'am</h3>

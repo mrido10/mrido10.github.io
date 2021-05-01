@@ -6,12 +6,16 @@ import {Link} from 'react-router-dom'
 import './navbar.css'
 
 class Navbar extends Component {
-    state = {
-        navbar: [
-            'Home',
-            'Profile',
-            'Resume'
-        ]
+    constructor(props) {
+        super(props)
+        this.state = {
+            navbar: [
+                'Home',
+                'Profile',
+                'Resume'
+            ],
+            navbarActive: false
+        }
     }
 
     navbarItem = (value) => {
@@ -25,25 +29,37 @@ class Navbar extends Component {
     }
 
     handleActiveNavbarTogle = () => {
-        let togle = document.getElementById('togle')
+        this.setState({
+            navbarActive: !this.state.navbarActive
+        }, () => {
+            let navbarBox = document.getElementById('itemBoxNavbar')
+            this.state.navbarActive ? navbarBox.className += ' active' : navbarBox.className = 'itemBoxNavbar'
+        })
+    }
+
+    handleKeepNavbar = () => {
         let navbarBox = document.getElementById('itemBoxNavbar')
-        if (!navbarBox.className.includes('active')) {
-            navbarBox.className += ' active'
-        } else {
+        navbarBox.className = 'itemBoxNavbar active'
+    }
+
+    handleHideNavbar = () => {
+        document.body.addEventListener('mouseup', () => {
+            let navbarBox = document.getElementById('itemBoxNavbar')
             navbarBox.className = 'itemBoxNavbar'
-        }
+        })
+    }
 
-
-        
+    componentDidMount = () => {
+        this.handleHideNavbar()
     }
 
     render() {
         return(
             <div id='navbarBox'>
                 <div className='togle' id='togle' onClick={this.handleActiveNavbarTogle}>
-                    <FontAwesomeIcon icon={faEllipsisH} />
+                    <FontAwesomeIcon id='menu' icon={faEllipsisH} />
                 </div>
-                <div id='itemBoxNavbar' className='itemBoxNavbar'>
+                <div id='itemBoxNavbar' className='itemBoxNavbar' onClick={this.handleKeepNavbar}>
                     
                     {
                         this.state.navbar.map((val) => {
