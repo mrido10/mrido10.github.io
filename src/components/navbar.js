@@ -12,7 +12,9 @@ class Navbar extends Component {
             navbar: [
                 'Home',
                 'Profile',
-                'Resume'
+                'Resume',
+                'Portofolio',
+                'Contact',
             ],
             navbarActive: false
         }
