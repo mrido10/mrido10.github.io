@@ -1,4 +1,4 @@
-import {Route, BrowserRouter, Switch} from 'react-router-dom'
+import {Route, BrowserRouter, Switch, HashRouter} from 'react-router-dom'
 import Home from './pages/home/home'
 import Profile from './pages/profile/profile'
 import Resume from './pages/resume/resume'
@@ -12,7 +12,7 @@ function App() {
   ]
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         {
           route.map(val => {
@@ -21,7 +21,7 @@ function App() {
         }
         <Route component={NotFoundPage} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
