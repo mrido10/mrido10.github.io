@@ -57,19 +57,22 @@ class Navbar extends Component {
 
     render() {
         return(
-            <div id='navbarBox'>
-                <div className='togle' id='togle' onClick={this.handleActiveNavbarTogle}>
-                    <FontAwesomeIcon id='menu' icon={faEllipsisH} />
-                </div>
-                <div id='itemBoxNavbar' className='itemBoxNavbar' onClick={this.handleKeepNavbar}>
-                    
-                    {
-                        this.state.navbar.map((val) => {
-                            return this.navbarItem(val)
-                        })
-                    }
+            <div id='navbarBG'>
+                <div id='navbarBox'>
+                    <div className='togle' id='togle' onClick={this.handleActiveNavbarTogle}>
+                        <FontAwesomeIcon id='menu' icon={faEllipsisH} />
+                    </div>
+                    <div id='itemBoxNavbar' className='itemBoxNavbar' onClick={this.handleKeepNavbar}>
+                        
+                        {
+                            this.state.navbar.map((val) => {
+                                return this.navbarItem(val)
+                            })
+                        }
+                    </div>
                 </div>
             </div>
+            
         )
     }
 }

@@ -1,4 +1,4 @@
-import {Route, BrowserRouter, Switch, HashRouter} from 'react-router-dom'
+import {Route, Switch, HashRouter} from 'react-router-dom'
 import Home from './pages/home/home'
 import Profile from './pages/profile/profile'
 import Resume from './pages/resume/resume'

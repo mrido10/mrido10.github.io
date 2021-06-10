@@ -1,9 +1,19 @@
+#navbarBG {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 80px;
+    background-color: #1a1d22;
+}
+
 #navbarBox {
     position: fixed;
     z-index: 10;
-    width: 100%;
+    width: 1200px;
     height: 80px;
-    padding: 0 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: row; 
@@ -29,7 +39,7 @@
     width: 80px;
     text-align: center;
     font-size: 1.1em;
-    margin: 0 15px;
+    margin: 0 0 0 30px;
     padding: 3px 0;
     border-radius: 20px;
 }
@@ -67,17 +77,34 @@
 #navbarBox .togle svg {
     color: #fff;
 }
-#container2 #navbarBox {
-    background-color: #111316;
-}
 
 /* make responsive navbar */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1300px) {
+    #navbarBox {width: 1100px;}
+}
+@media screen and (max-width: 1200px) {
+    #navbarBox {width: 1000px;}
+}
+@media screen and (max-width: 1100px) {
+    #navbarBox {width: 900px;}
+}
+@media screen and (max-width: 1000px) {
+    #navbarBox {width: 800px;}
+}
+@media screen and (max-width: 900px) {
+    #navbarBox {width: 700px;}
+}
+@media screen and (max-width: 800px) {
+    #navbarBox {width: 600px;}
+}
+@media screen and (max-width: 700px) {
     #navbarBox {
         width: 200px;
         height: 100vh;
         padding: 0;
         right: 0;
+        left: auto;
+        transform: none;
     }
     #itemBoxNavbar {
         flex-direction: column; 

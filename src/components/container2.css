@@ -1,10 +1,10 @@
 /* container style */
-#container2 {
+/* #container2 {
     background-color: #21252B;
     width: 100%;
     height: 100vh;
     overflow: auto;
-}
+} */
 
 /* make responsive navbar container2 and scrollbar*/
 @media screen and (max-width: 600px) {

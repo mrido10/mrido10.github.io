@@ -83,13 +83,13 @@ class Profile extends Component {
 
     render () {
         return(
-            <div id='container2'>
+            <div id='container'>
                 <Navbar />
                 <div className='containerContent abt' data-aos='fade' data-aos-delay="300">
                     <div className='contentBox aboutMeBox'>
-                        <div className='photo'>
+                        {/* <div className='photo'>
                             <img src={photo} />
-                        </div>
+                        </div> */}
                         <div className='titleBox left'>
                             <h2 className='title' data-aos='fade-right'>About</h2>
                             <h2 className='title' data-aos='fade-right'>Me</h2>

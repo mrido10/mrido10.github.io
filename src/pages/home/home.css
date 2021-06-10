@@ -1,41 +1,71 @@
 #container {
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/images/background.jpeg');
+    /* background-image: url('../../assets/images/background.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #1a1d22;
     background-position: center;  
     overflow: auto;  
-    
 }
 
 #boxContent {
-    width: 100%;
+    position: relative;
+    width: 1200px;
     height: auto;
-    padding: 100px;
+    padding: 0;
+    margin: auto;
     box-sizing: border-box;
     position: relative;
     top: 55%;
     transform: translate(0, -50%);
-    text-align: center;
     color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+#boxImg {
+    background-image: url('../../assets/images/profile.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 500px;
+    height: 500px;
+    border-radius: 0 50% 50% 50%;
+}
+
+#boxImg:hover {
+    cursor: pointer;
+}
+
+#boxContentChild {
+    position: relative;
+    width: calc(100% - 500px);
+    height: 500px;
+    padding-left: 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: center;
 }
 h1, h2, h3 {margin: 0;}
 h1 {
-    font-size: 2.5em;
-    margin-top: 0.5em;
+    font-size: 3.3em;
+    color: #1F6FEB;
 }
 h2 {font-size: 2em;}
-h3 {font-size: 1.5em;}
+h3 {font-size: 2em;}
 p {
     font-style: italic;
+    font-size: 0.9em;
     padding: 1em 0;
     box-sizing: border-box;
     margin-bottom: 50px;
 }
 a {
     color: #fff;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .download {
@@ -43,11 +73,12 @@ a {
     position: relative;
     width: 130px;
     height: 30px;
-    margin: 0;
+    margin: 20px 0;
     border: 1px solid #fff;
     padding: 2px 0;
     border-radius: 15px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .download:hover {
@@ -61,64 +92,131 @@ a {
 }
 
 /* make responsive */
-@media screen and (max-width: 750px) {
+@media screen and (min-height: 865px) {
     #boxContent {
-        padding: 100px 75px;
+        top: calc(865px / 2);
     }
-    h1 {
-        font-size: 2em;
-        margin-top: 0.5em;
+}
+
+@media screen and (max-width: 1300px) {
+    #boxContent {width: 1100px;}
+    #boxContentChild {padding-left: 120px;}
+}
+@media screen and (max-width: 1200px) {
+    #boxContent {width: 1000px;}
+    #boxImg {
+        width: 400px;
+        height: 400px;
     }
-    h2 {font-size: 1.7em;}
-    h3 {font-size: 1.5em;}
+    #boxContentChild {
+        height: 400px;
+        width: calc(100% - 400px);
+        padding-left: 100px;
+    }
+    h1 {font-size: 3em;}
+    h2 {font-size: 1.9em;}
+    h3 {font-size: 1.8em;}
+    p {padding: 0.6em 0;}
+}
+@media screen and (max-width: 1100px) {
+    #boxContent {width: 900px;}
+    #boxImg {
+        width: 380px;
+        height: 380px;
+    }
+    #boxContentChild {
+        height: 380px;
+        width: calc(100% - 380px);
+        padding-left: 80px;
+    }
+    p {padding: 0;}
+}
+@media screen and (max-width: 1000px) {
+    #boxContent {width: 800px;}
+    #boxImg {
+        width: 300px;
+        height: 300px;
+    }
+    #boxContentChild {
+        height: 300px;
+        width: calc(100% - 300px);
+        padding-left: 50px;
+    }
+    h1 {font-size: 2.7em;}
+    h2 {font-size: 1.6em;}
+    h3 {font-size: 1.3em;}
+}
+@media screen and (max-width: 900px) {
+    #boxContent {width: 700px;}
+    #boxImg {
+        width: 250px;
+        height: 250px;
+    }
+    #boxContentChild {
+        height: 250px;
+        width: calc(100% - 250px);
+        padding-left: 30px;
+    }
+    h1 {font-size: 2.5em;}
+    h2 {font-size: 1.5em;}
+    h3 {font-size: 1.3em;}
     p {
-        font-style: italic;
-        font-size: 0.8em;
-        padding: 0.8em 0;
-        box-sizing: border-box;
-        margin-bottom: 40px;
+        padding: 0.3em 0;
+        margin-bottom: 0;
     }
+}
+@media screen and (max-width: 800px) {
+    #boxContent {
+        width: 600px;
+        flex-direction: column;
+        align-items: center;
+        top: 150px;
+        transform: translate(0, 0);
+    }
+    #boxImg {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    #boxContentChild {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        margin-top: 50px;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    #boxContent {width: 500px;}
+}
+@media screen and (max-width: 600px) {
+    #boxContent {width: 400px;}
+}
+@media screen and (max-width: 500px) {
+    #boxContent {width: 350px;}
+    a {font-size: 0.8em;}
+    
     .download {
         width: 110px;
         height: 25px;
-        padding: 4px;
-        font-size: 0.75em;
+        margin: 40px 0 0;
     }
 }
-
-@media screen and (max-width: 500px) {
-    #boxContent {
-        padding: 100px 40px;
-    }
-}
-
 @media screen and (max-width: 400px) {
     #boxContent {
-        padding: 100px 30px;
+        top: 110px;
+        width: 300px;
     }
-}
-
-@media screen and (max-width: 350px) {
-    #boxContent {
-        padding: 100px 20px;
+    #boxImg {
+        width: 150px;
+        height: 150px;
     }
-    h1 {
-        font-size: 1.7em;
-        margin-top: 0.5em;
-    }
-    h2 {font-size: 1.3em;}
-    h3 {font-size: 1.1em;}
+    h1 {font-size: 2em;}
+    h2 {font-size: 1em;}
+    h3 {font-size: 0.8em;}
     p {
-        font-style: italic;
+        padding: 0.2em 0;
         font-size: 0.8em;
-        padding: 0.8em 0;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-    }
-    .download {
-        width: 90px;
-        height: 20px;
-        padding: 1px;
-        font-size: 0.7em;
     }
 }
