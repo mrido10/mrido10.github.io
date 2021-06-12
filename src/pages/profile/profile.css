@@ -80,10 +80,6 @@ svg {color: #1F6FEB;}
 }
 
 /* education style */
-.containerContent.edu {
-    /* background-color: #1a1d22; */
-}
-
 .containerContent .contentBox.eduBox .contentBox2 .subtitle {
     display: grid;
     grid-template-columns: 90px auto 25px 80px;

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component } from 'react'
 import Navbar from '../../components/navbar'
 import AOS from 'aos' 
-import photo from '../../assets/images/background.jpeg'
 
 import "aos/dist/aos.css"
 import './profile.css'
@@ -36,7 +35,6 @@ class Profile extends Component {
         return (
             <div className='aboutMe'>
                 <FontAwesomeIcon icon={val.icon} data-aos='fade-up' />
-                {/* <div className='titleContent'>{val.title}</div> */}
                 <div className='content' data-aos='fade-up'>{val.content}</div>
             </div>
         )
@@ -87,9 +85,6 @@ class Profile extends Component {
                 <Navbar />
                 <div className='containerContent abt' data-aos='fade' data-aos-delay="300">
                     <div className='contentBox aboutMeBox'>
-                        {/* <div className='photo'>
-                            <img src={photo} />
-                        </div> */}
                         <div className='titleBox left'>
                             <h2 className='title' data-aos='fade-right'>About</h2>
                             <h2 className='title' data-aos='fade-right'>Me</h2>
