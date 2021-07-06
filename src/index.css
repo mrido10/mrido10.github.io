@@ -20,15 +20,51 @@
       url(./assets/font/Montserrat-MediumItalic.ttf),  
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url(./assets/font/Poppins-Regular.ttf),
+      url(./assets/font/Poppins-Bold.ttf),
+      url(./assets/font/Poppins-BoldItalic.ttf),
+      url(./assets/font/Poppins-Black.ttf),
+      url(./assets/font/Poppins-BlackItalic.ttf),
+      url(./assets/font/Poppins-ExtraBold.ttf),
+      url(./assets/font/Poppins-ExtraBoldItalic.ttf),
+      url(./assets/font/Poppins-ExtraLight.ttf),
+      url(./assets/font/Poppins-ExtraLightItalic.ttf),
+      url(./assets/font/Poppins-Italic.ttf),
+      url(./assets/font/Poppins-Light.ttf),
+      url(./assets/font/Poppins-LightItalic.ttf),
+      url(./assets/font/Poppins-Medium.ttf),
+      url(./assets/font/Poppins-MediumItalic.ttf),
+      url(./assets/font/Poppins-SemiBold.ttf),
+      url(./assets/font/Poppins-SemiBoldItalic.ttf),
+      url(./assets/font/Poppins-Thin.ttf),
+      url(./assets/font/Poppins-ThinItalic.ttf);
+}
+
 body {
   margin: 0;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+  font-family: 'Poppins', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  /* background-color: #1a1d22; */
+  
 }
 
 a {
   text-decoration: none;
+}
+
+/* style scrollbar in chrome */
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #1a1d22;}
+::-webkit-scrollbar-thumb {background-color: #3a3d42;}
+
+/* style scrollbar in firefox */
+:root {
+  scrollbar-width: thin;         
+  scrollbar-color: #3a3d42 #1a1d22;  
 }

@@ -1,0 +1,73 @@
+#ocean { 
+    height: 190px;
+    width: 100%;
+    background-color: #1a1d22;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+  
+#ocean .wave {
+    background-image: url('../assets/images/icons/wave.svg');
+    background-repeat: repeat-x;
+    width: 200%;
+    height: 100%;
+    background-size: calc(100vw + 1px) 160px;
+    background-position: initial;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite,  swell2 7s ease -1.25s infinite;
+    margin: 0 -1px;
+}
+  
+#ocean .wave:nth-of-type(2) {
+    z-index: 1;
+    top: 10px;
+    background-image: url('../assets/images/icons/wave2.svg');
+    animation: wave 15s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+  
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -100%;
+    }
+} 
+  
+@keyframes swell {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+}
+
+/* @keyframes swell2 {
+    0%, 100% {
+        transform: translate(0, 25px);
+    }
+    50% {
+        transform: translate(0, 35px);
+    }
+} */
+/* only home */
+.home #ocean { 
+    bottom: 0;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 850px) { 
+    #ocean { 
+        height: 100px;
+    }
+    #ocean .wave {
+        background-size: 101vw 80px;
+    }
+
+}

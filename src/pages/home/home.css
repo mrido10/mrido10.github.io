@@ -1,122 +1,148 @@
-/* #container {
-    width: 100%;
-    height: 100vh;
-    background-color: #1a1d22;
-    background-position: center;  
-    overflow: auto;  
-}
-
-#boxContentContainer{
+#homeCont {
     position: relative;
-    width: 1200px;
-    height: auto;
-    padding: 0;
-    margin: auto;
-    box-sizing: border-box;
-    position: relative;
-    top: 55%;
-    transform: translate(0, -50%);
-    color: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    z-index: 2;
+    margin: 0;
 }
 
-#boxContent {
-    position: relative;
-    width: calc(100% - 500px);
-    height: 500px;
-    padding-left: 150px;
+#homeCont .imgCont {
+    align-self: flex-end;
+    padding: 0 50px;
+    /* width: 30vw;
+    height: 90vh; */
+}
+
+#homeCont .imgCont img{
+    height: 90vh;
+    z-index: 2;
+}
+
+#homeCont .homeContCtn {
     box-sizing: border-box;
+    padding-left: 50px;
+    z-index: 3;
+}
+
+#homeCont h1 {
+    font-size: 38px;
+    margin: 20px 0 0 0;
+}
+#homeCont h2 {
+    font-size: 30px;
+    margin: 0;
+}
+#homeCont h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#homeCont h1 span.blue {
+    color: #2196F3;
+}
+
+#homeCont .button {
     display: flex;
-    flex-direction: column; 
     justify-content: center;
-    align-items: flex-start;
-    justify-content: center;
-} */
-h1, h2, h3 {margin: 0;}
-h1 {
-    font-size: 3.3em;
-    color: #1F6FEB;
+    align-items: center;
+    border-radius: 18px;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    height: 36px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 50px;
+    font-size: 16px;
 }
-h2 {font-size: 2em;}
-h3 {font-size: 2em;}
-p {
-    font-style: italic;
-    font-size: 0.9em;
-    padding: 1em 0;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-}
-a {
-    color: #fff;
-    font-size: 1em;
-}
-
-.download {
+  
+#homeCont .button span {
+    cursor: pointer;
     display: inline-block;
     position: relative;
-    width: 130px;
-    height: 30px;
-    margin: 20px 0;
-    border: 1px solid #fff;
-    padding: 2px 0;
-    border-radius: 15px;
-    box-sizing: border-box;
-    text-align: center;
+    transition: 0.5s;
+}
+  
+#homeCont .button span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#homeCont .button:hover span {
+    padding-right: 25px;
+}
+  
+#homeCont .button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
-.download:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+@media screen and (max-width: 970px) {
+    #homeCont .imgCont {
+        padding: 0 0 0 50px;
+    }
 }
 
-@media screen and (max-width: 1200px) {
-    h1 {font-size: 3em;}
-    h2 {font-size: 1.9em;}
-    h3 {font-size: 1.8em;}
-    p {padding: 0.6em 0;}
-}
-@media screen and (max-width: 1100px) {
-    p {padding: 0;}
-}
-@media screen and (max-width: 1000px) {
-    h1 {font-size: 2.7em;}
-    h2 {font-size: 1.6em;}
-    h3 {font-size: 1.3em;}
-}
-@media screen and (max-width: 900px) {
-    h1 {font-size: 2.5em;}
-    h2 {font-size: 1.5em;}
-    h3 {font-size: 1.3em;}
-    p {
-        padding: 0.3em 0;
-        margin-bottom: 0;
+@media screen and (max-width: 935px) {
+    #homeCont .homeContCtn {
+        padding-left: 0;
+        position: absolute;
+        left: 50vw;
+    }
+    #homeCont .imgCont {
+        padding: 0;
+        position: absolute;
+        left: 0;
     }
 }
-@media screen and (max-width: 500px) {
-    a {font-size: 0.8em;}
-    
-    .download {
-        width: 110px;
-        height: 25px;
-        margin: 40px 0 0;
+
+@media screen and (max-width: 770px) {
+    #homeCont .imgCont {
+        left: -100px;
+    }
+    #homeCont .homeContCtn {
+        left: 45vw;
     }
 }
-@media screen and (max-width: 400px) {
-    h1 {font-size: 2em;}
-    h2 {font-size: 1em;}
-    h3 {font-size: 0.8em;}
-    p {
-        padding: 0.2em 0;
-        font-size: 0.8em;
+
+@media screen and (max-width: 665px) {
+    #homeCont .imgCont {
+        left: -150px;
     }
 }
-@media screen and (max-width: 300px) {
-    h1 {font-size: 1.5em;}
-    h2 {font-size: 0.8em;}
-    h3 {font-size: 0.8em;}
-    p {
-        padding: 0.4em 0;
-        font-size: 0.6em;
+
+
+@media screen and (max-width: 620px) {
+    #homeCont .imgCont {
+        display: none;
+    }
+    #homeCont .homeContCtn {
+        left: 0;
+        width: 100vw;
+        padding: 0 10vw;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #homeCont h1 {
+        font-size: 32px;
+    }
+    #homeCont h2 {
+        font-size: 26px;
+    }
+    #homeCont h3 {
+        font-size: 22px;
+    }
+    #homeCont .button {
+        width: 160px;
+        font-size: 14px;
     }
 }

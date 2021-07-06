@@ -11,10 +11,7 @@ class Navbar extends Component {
         this.state = {
             navbar: [
                 'Home',
-                'Profile',
-                'Resume',
-                'Portofolio',
-                'Contact',
+                'About'
             ],
             navbarActive: false
         }
@@ -31,11 +28,18 @@ class Navbar extends Component {
     }
 
     handleActiveNavbarTogle = () => {
+        let box = document.getElementById('navbarBox')
         this.setState({
             navbarActive: !this.state.navbarActive
         }, () => {
             let navbarBox = document.getElementById('itemBoxNavbar')
-            this.state.navbarActive ? navbarBox.className += ' active' : navbarBox.className = 'itemBoxNavbar'
+            if (this.state.navbarActive) {
+                box.style.width = '200px'
+                navbarBox.className += ' active' 
+            } else {
+                box.style.width = '0'
+                navbarBox.className = 'itemBoxNavbar'
+            } 
         })
     }
 
@@ -57,19 +61,16 @@ class Navbar extends Component {
 
     render() {
         return(
-            <div id='navbarBG'>
-                <div id='navbarBox'>
-                    <div className='togle' id='togle' onClick={this.handleActiveNavbarTogle}>
-                        <FontAwesomeIcon id='menu' icon={faEllipsisH} />
-                    </div>
-                    <div id='itemBoxNavbar' className='itemBoxNavbar' onClick={this.handleKeepNavbar}>
-                        
-                        {
-                            this.state.navbar.map((val) => {
-                                return this.navbarItem(val)
-                            })
-                        }
-                    </div>
+            <div id='navbarBox'>
+                <div className='togle' id='togle' onClick={this.handleActiveNavbarTogle}>
+                    <FontAwesomeIcon id='menu' icon={faEllipsisH} />
+                </div>
+                <div id='itemBoxNavbar' className='itemBoxNavbar' onClick={this.handleKeepNavbar}>
+                    {
+                        this.state.navbar.map((val) => {
+                            return this.navbarItem(val)
+                        })
+                    }
                 </div>
             </div>
             

@@ -1,0 +1,57 @@
+.cont1 .contx .myComp {
+    display: grid;
+    grid-template-columns: 14px 10px calc(100% - 50px);
+    grid-template-rows: 30px auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "circle space year"
+        "line space header"
+        "line space detail";
+}
+
+.myComp .year {
+    grid-area: year;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.myComp .header {
+    grid-area: header;
+    font-size: 18px;
+}
+.myComp .detail {
+    grid-area: detail;
+    font-size: 14px;
+    padding: 15px 0 10px;
+}
+.myComp .circle {
+    grid-area: circle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myComp .space {grid-area: space;}
+.myComp .line {grid-area: line;}
+
+.myComp .circle div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #2196F3;
+}
+.myComp .line .ln {
+    position: relative;
+    width: 1px;
+    height: calc(100% + 42px);
+    background-color: #2196F3;
+    margin: auto;
+    top: -9px;
+}
+
+.myComp .year svg {
+    margin-right: 10px;
+}
+
+  

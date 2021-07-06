@@ -1,0 +1,14 @@
+.cont1 .contx {
+    width: 50%;
+}
+
+.cont1 .contx .myComp {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    .cont1 .contx {
+        width: 100%;
+    }
+}
+

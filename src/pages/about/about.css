@@ -1,0 +1,69 @@
+.about .cont1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: solid 1px #4a4d52;
+}
+
+.about .cont1.skill {
+    justify-content: space-evenly;
+}
+
+.about h2 {
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.about h2 span.blue {
+    font-size: 30px;
+    color: #2196F3;
+}
+
+.about h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.about p, .about span, .about a {font-size: 14px;}
+
+.about p {
+    text-align: justify;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.about span.label {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+}
+
+@media screen and (max-width: 850px) {
+    .about .cont1 {
+        padding: 40px 0;
+    }
+    .about h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about span {
+        font-size: 13px;
+    }
+    .about span.label {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .about span {
+        font-size: 12px;
+    }
+    .about span.label {
+        width: 60px;
+    }
+}

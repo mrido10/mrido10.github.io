@@ -1,46 +1,29 @@
 import React, { Component } from 'react'
 import Navbar from '../../components/navbar'
 import {Link} from 'react-router-dom'
-import ImageProfile from '../../components/imageProfile'
-import ImageProfileView from '../../components/imageProfileView'
-
-import AOS from 'aos' 
-import "aos/dist/aos.css"
+import Wave from '../../components/wave'
+import picture from '../../assets/images/homePict.png'
 
 import './home.css'
 import './container.css'
 
 class Home extends Component { 
-    state = {
-        widthImage: '',
-        displayContent: ''
-    }
-
-    componentDidMount = () => {
-        AOS.init({
-            duration : 400
-        })
-        AOS.refresh()
-    } 
-
     render() {  
         return(
-            <div id='container'>
+            <div id='container' className='home'>
                 <Navbar />
-                <ImageProfileView />
-                <div id='boxContentContainer' data-aos="fade">
-                    <ImageProfile  />
-                    <div id='boxContent'>
-                        <h3 className='hello'>Hello, I'am</h3>
-                        <h1 className='name'>Muhammad Rido</h1>
-                        <h2 className='job'>Web Developer</h2>
-                        <p className='about'>
-                            "Experienced in IT field since 2020. Skilled in Java, Golang, Javascript (React Js), Arduino, Database (mySql), HTML5, CSS3"
-                        </p>
-                        <Link className='download' onClick={() => {window.open('file/Muhammad_Rido_CV.pdf')}}>Download CV</Link>
+                <section id='homeCont'>
+                    <div className='imgCont'>
+                        <img src={picture} alt='This Pictures'></img>
                     </div>
-                </div>
-                
+                    <div className='homeContCtn'>
+                        <h3 className='hello'>Hello, I'am</h3>
+                        <h1 className='name'>MUHAMMAD <span className='blue'>RIDO</span></h1>
+                        <h2 className='job'>Web Developer</h2>
+                        <Link className='button' to='/about'><span>More About Me</span></Link>
+                    </div>
+                </section>
+                <Wave />
             </div>
         )
     }

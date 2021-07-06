@@ -1,14 +1,13 @@
 import {Route, Switch, HashRouter} from 'react-router-dom'
 import Home from './pages/home/home'
-import Profile from './pages/profile/profile'
-import Resume from './pages/resume/resume'
+import About from './pages/about/about'
 import NotFoundPage from './pages/notFound/notFound'
 
 function App() {
   let route = [
     {link: '/', page: Home},
-    {link: '/profile', page: Profile},
-    {link: '/resume', page: Resume}
+    {link: '/about', page: About},
+    // {link: '/resume', page: Resume}
   ]
 
   return (
