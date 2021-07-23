@@ -35,8 +35,9 @@ class Skills extends Component {
             <section id='skillsCont' className='cont1 skill'>
                 <h2>SKI<span className='blue'>LLS</span></h2>
                 {
-                    this.state.skill.map(val => {
-                        return <SkillComponent skill={val.name} text={val.toolTip}/>
+                    this.state.skill.map((val, idx) => {
+                        return <SkillComponent skill={val.name} text={val.toolTip} index={idx}/>
+                        
                     })
                 }
             </section>

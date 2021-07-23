@@ -12,8 +12,7 @@
 #homeCont .imgCont {
     align-self: flex-end;
     padding: 0 50px;
-    /* width: 30vw;
-    height: 90vh; */
+    overflow: hidden;
 }
 
 #homeCont .imgCont img{
@@ -23,8 +22,9 @@
 
 #homeCont .homeContCtn {
     box-sizing: border-box;
-    padding-left: 50px;
+    margin-left: 50px;
     z-index: 3;
+    overflow: hidden;
 }
 
 #homeCont h1 {
@@ -94,6 +94,7 @@
 @media screen and (max-width: 935px) {
     #homeCont .homeContCtn {
         padding-left: 0;
+        margin-left: 0;
         position: absolute;
         left: 50vw;
     }
@@ -126,8 +127,7 @@
     }
     #homeCont .homeContCtn {
         left: 0;
-        width: 100vw;
-        padding: 0 10vw;
+        margin: 0 10vw;
     }
 }
 

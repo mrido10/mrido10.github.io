@@ -7,7 +7,11 @@
     width: 50%;
     flex: 1;
     padding: 50px 0;
+}
 
+#aboutMeCont .abtContentCont {
+    overflow: hidden;
+    padding-bottom: 0;
 }
 
 #aboutMeCont h2 {margin: 50px 0 10px;}

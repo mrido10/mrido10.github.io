@@ -1,3 +1,7 @@
+#contactCont div {
+    overflow: hidden;
+}
+
 #contactCont .contactComp {
     width: 40px;
     height: 40px;

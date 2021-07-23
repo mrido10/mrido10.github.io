@@ -9,7 +9,7 @@ class MyComponent extends Component {
     render() {
         return(
             <div className='contx'>
-                {this.props.title != null ? <h3>{this.props.title}</h3> : <></>}
+                {this.props.title != null ? <h3 data-aos='fade-up'>{this.props.title}</h3> : <></>}
                 {
                     this.state.whatFor.map(val => {
                         return <DetailComponent year={val.year} header={val.school || val.work} 

@@ -4,7 +4,7 @@ import './timeLineDetail.css'
 
 let DetailComponent = props => {
     return(
-        <div className='myComp'>
+        <div className='myComp' data-aos='fade-up'>
             <div className="year"><FontAwesomeIcon icon={faCalendarAlt}/>{props.year}</div>
             <div className="header">{props.header}</div>
             <div className="detail">{props.detail}</div>
