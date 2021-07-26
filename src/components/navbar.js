@@ -46,18 +46,33 @@ class Navbar extends Component {
     handleActiveNavbarTogle = () => {
         let box = document.getElementById('navbarBox')
         let navbarBox = document.getElementById('itemBoxNavbar')
-        if (this.state.navbarActive === undefined || this.state.navbarActive === null) {
-            box.style.width = '200px'
-            navbarBox.classList.add('active')
-        } else {
-            box.style.width = '0'
-            navbarBox.classList.remove('active')
+        let windowWidth = window.matchMedia("(max-width: 1000px)")
+        if (windowWidth.matches) {
+            if (this.state.navbarActive === undefined || this.state.navbarActive === null) {
+                box.style.width = '200px'
+                navbarBox.classList.add('active')
+            } else {
+                box.style.width = '0'
+                navbarBox.classList.remove('active')
+            }
+    
+            this.setState({
+                navbarActive: navbarBox.classList[1]
+            })
         }
-
-        this.setState({
-            navbarActive: navbarBox.classList[1]
-        })
         
+        
+    }
+
+    resetNavbarBoxWidth = () => {
+        let box = document.getElementById('navbarBox')
+        if (window.innerWidth > 1000) {
+            box.style.width = 'calc(100% - 200px)'
+        } else {
+            if (this.state.navbarActive === 'active') {
+                box.style.width = '200px'
+            }
+        }
     }
 
     handleKeepNavbar = () => {
@@ -73,6 +88,7 @@ class Navbar extends Component {
     }
 
     componentDidMount = () => {
+        window.addEventListener('resize', this.resetNavbarBoxWidth)
         let a = document.querySelectorAll('#itemBoxNavbar a')
         a.forEach(val => {
             val.addEventListener('click', () => {
