@@ -58,7 +58,7 @@
 } */
 /* only home */
 .home #ocean { 
-    bottom: 0;
+    top: calc(100vh - 190px);
     background-color: transparent;
 }
 
@@ -68,6 +68,10 @@
     }
     #ocean .wave {
         background-size: 101vw 80px;
+    }
+
+    .home #ocean { 
+        top: calc(100vh - 100px);
     }
 
 }
