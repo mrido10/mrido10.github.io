@@ -23,6 +23,7 @@
 }
 
 .home #navbarBox {
+    display: none;
     visibility: hidden;
 }
 
@@ -40,12 +41,17 @@
     flex-direction: row; 
     justify-content: flex-end;
 }
+
+#itemBoxNavbar a {
+    cursor: pointer;
+}
+
 #itemBoxNavbar .item {
-    width: 100px;
+    width: auto;
     text-align: center;
     font-size: 1.1em;
-    margin: 0 0 0 30px;
-    padding: 3px 0;
+    margin: 0 0 0 15px;
+    padding: 3px 15px;
     border-radius: 20px;
 }
 
@@ -95,7 +101,7 @@
 @media screen and (max-width: 1300px) {
     #navbarBG, #navbarBox {width: calc(100% - 200px);}
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
     #navbarBox {
         width: 0;
         height: 100vh;
@@ -127,11 +133,5 @@
         display: flex;
     justify-content: center;
     align-items: center;
-    }
-}
-
-@media screen and (max-width: 620px) {
-    .home #navbarBox {
-        visibility: visible;
     }
 }

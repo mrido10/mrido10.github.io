@@ -17,7 +17,7 @@
     position: absolute;
     z-index: 2;
     top: 30px;
-    animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite,  swell2 7s ease -1.25s infinite;
+    animation: wave 70s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite,  swell2 20s ease -1.25s infinite;
     margin: 0 -1px;
 }
   
@@ -25,7 +25,7 @@
     z-index: 1;
     top: 10px;
     background-image: url('../assets/images/icons/wave2.svg');
-    animation: wave 15s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    animation: wave 65s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 20s ease -1.25s infinite;
     opacity: 1;
 }
 

@@ -26,10 +26,6 @@ class Skills extends Component {
         ]
     }
 
-    componentDidMount() {
-        console.log(javaIcon)
-    }
-
     render() {
         return(
             <section id='skillsCont' className='cont1 skill'>
