@@ -61,10 +61,10 @@ a {
 /* style scrollbar in chrome */
 ::-webkit-scrollbar {width: 10px;}
 ::-webkit-scrollbar-track {background: #1a1d22;}
-::-webkit-scrollbar-thumb {background-color: #3a3d42;}
+::-webkit-scrollbar-thumb {background-color: #2196F3; border-radius: 5px;}
 
 /* style scrollbar in firefox */
 :root {
   scrollbar-width: thin;         
-  scrollbar-color: #3a3d42 #1a1d22;  
+  scrollbar-color: #2196F3 #1a1d22;  
 }
