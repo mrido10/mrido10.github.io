@@ -10,6 +10,8 @@ import cssIcon from '../../../assets/images/icons/css3.svg'
 import gitIcon from '../../../assets/images/icons/git.svg'
 import arduinoIcon from '../../../assets/images/icons/arduino.svg'
 import bootsrap from '../../../assets/images/icons/bootstrap.svg'
+import redis from '../../../assets/images/icons/redis.svg'
+import elasticSearch from '../../../assets/images/icons/elasticsearch.svg'
 
 
 class Skills extends Component {
@@ -24,7 +26,9 @@ class Skills extends Component {
             {name: cssIcon, toolTip: 'CSS3'},
             {name: gitIcon, toolTip: 'GIT'},
             {name: arduinoIcon, toolTip: 'Arduino'},
-            {name: bootsrap, toolTip: 'Bootsrap'}
+            {name: bootsrap, toolTip: 'Bootsrap'},
+            {name: redis, toolTip: 'Redis'},
+            {name: elasticSearch, toolTip: 'Elasticsearch'},
         ]
     }
 

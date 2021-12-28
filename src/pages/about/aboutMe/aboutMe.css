@@ -30,6 +30,9 @@
     border-radius: 18px;
     box-sizing: border-box;
     text-align: center;
+
+    pointer-events: none;
+    opacity: 0.1;
 }
 
 #aboutMeCont a {color: #fff;}
