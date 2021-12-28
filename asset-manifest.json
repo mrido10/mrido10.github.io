@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.1cde5a6e.chunk.css",
-    "main.js": "/static/js/main.6a5c62d5.chunk.js",
-    "main.js.map": "/static/js/main.6a5c62d5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0e0cfbb4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0e0cfbb4.js.map",
+    "main.css": "/static/css/main.95855d1e.chunk.css",
+    "main.js": "/static/js/main.206f8604.chunk.js",
+    "main.js.map": "/static/js/main.206f8604.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6fa18410.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6fa18410.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.8038eda0.chunk.js": "/static/js/2.8038eda0.chunk.js",
     "static/js/2.8038eda0.chunk.js.map": "/static/js/2.8038eda0.chunk.js.map",
-    "static/js/3.761256cc.chunk.js": "/static/js/3.761256cc.chunk.js",
-    "static/js/3.761256cc.chunk.js.map": "/static/js/3.761256cc.chunk.js.map",
+    "static/js/3.cad3ee87.chunk.js": "/static/js/3.cad3ee87.chunk.js",
+    "static/js/3.cad3ee87.chunk.js.map": "/static/js/3.cad3ee87.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.1cde5a6e.chunk.css.map": "/static/css/main.1cde5a6e.chunk.css.map",
+    "static/css/main.95855d1e.chunk.css.map": "/static/css/main.95855d1e.chunk.css.map",
     "static/js/2.8038eda0.chunk.js.LICENSE.txt": "/static/js/2.8038eda0.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Poppins-ThinItalic.32743a4d.ttf",
     "static/media/arduino.87c37b32.svg": "/static/media/arduino.87c37b32.svg",
+    "static/media/bootstrap.91aad92a.svg": "/static/media/bootstrap.91aad92a.svg",
     "static/media/css3.3ec32022.svg": "/static/media/css3.3ec32022.svg",
     "static/media/git.43d387b7.svg": "/static/media/git.43d387b7.svg",
     "static/media/github.4cd3a2bc.svg": "/static/media/github.4cd3a2bc.svg",
@@ -27,16 +28,17 @@
     "static/media/java.5386b56c.svg": "/static/media/java.5386b56c.svg",
     "static/media/javascript.081325c6.svg": "/static/media/javascript.081325c6.svg",
     "static/media/linkedin.09211630.svg": "/static/media/linkedin.09211630.svg",
+    "static/media/money-manager.2903cbbc.jpg": "/static/media/money-manager.2903cbbc.jpg",
     "static/media/mysql.c9286640.svg": "/static/media/mysql.c9286640.svg",
     "static/media/profile.bc69382e.jpg": "/static/media/profile.bc69382e.jpg",
     "static/media/react.a060cbe8.svg": "/static/media/react.a060cbe8.svg",
     "static/media/wave.css": "/static/media/wave2.74afe4ac.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e0cfbb4.js",
+    "static/js/runtime-main.6fa18410.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.8038eda0.chunk.js",
-    "static/css/main.1cde5a6e.chunk.css",
-    "static/js/main.6a5c62d5.chunk.js"
+    "static/css/main.95855d1e.chunk.css",
+    "static/js/main.206f8604.chunk.js"
   ]
 }
