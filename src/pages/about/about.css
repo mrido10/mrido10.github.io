@@ -5,7 +5,7 @@
     border-bottom: solid 1px #4a4d52;
 }
 
-.about .cont1.skill {
+.about .cont1.skill, .about .cont1.porto {
     justify-content: space-evenly;
 }
 
