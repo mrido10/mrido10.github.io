@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7cc36900.chunk.css",
+    "main.css": "/static/css/main.f40eb0e0.chunk.css",
     "main.js": "/static/js/main.5b81b7ad.chunk.js",
     "main.js.map": "/static/js/main.5b81b7ad.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6fa18410.js",
@@ -12,7 +12,7 @@
     "static/js/3.cad3ee87.chunk.js.map": "/static/js/3.cad3ee87.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.7cc36900.chunk.css.map": "/static/css/main.7cc36900.chunk.css.map",
+    "static/css/main.f40eb0e0.chunk.css.map": "/static/css/main.f40eb0e0.chunk.css.map",
     "static/js/2.8038eda0.chunk.js.LICENSE.txt": "/static/js/2.8038eda0.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Poppins-ThinItalic.32743a4d.ttf",
     "static/media/arduino.87c37b32.svg": "/static/media/arduino.87c37b32.svg",
@@ -40,7 +40,7 @@
     "static/js/runtime-main.6fa18410.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.8038eda0.chunk.js",
-    "static/css/main.7cc36900.chunk.css",
+    "static/css/main.f40eb0e0.chunk.css",
     "static/js/main.5b81b7ad.chunk.js"
   ]
 }
