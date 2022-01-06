@@ -18,7 +18,7 @@ class Contact extends Component {
     render() {
         return(
             <section id='contactCont' className='cont1 contact'>
-                <h2>CONTACT<span className='blue'> US</span></h2>
+                <h2>CONTACT<span className='blue'> ME</span></h2>
                 {
                     this.state.icon.map((val, idx) => {
                         return <ContactComponent contact={val.name} link={val.link} text={val.toolTip} index={idx}/>

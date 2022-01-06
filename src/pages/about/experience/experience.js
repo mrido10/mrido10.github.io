@@ -5,8 +5,14 @@ class Experience extends Component {
     state = {
         experience: [
             {
-                year: 'June, 2020 - Now', 
+                year: 'June, 2020 - December, 2021',
                 work: 'Fullstack Programmer - PT. Paramadaksa Teknologi Nusantara',
+                detail: 'Develop web application for Distribution Management System',
+                line: 'ln'
+            },
+            {
+                year: 'January, 2022 - Now', 
+                work: 'Backend programmer - PT. Paramadaksa Teknologi Nusantara',
                 detail: 'Develop web application for Distribution Management System'
             }
         ]

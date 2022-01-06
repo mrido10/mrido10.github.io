@@ -110,10 +110,10 @@
         padding-bottom: 20px;
     }
     #aboutMeCont p {
-        text-align: center;
+        /* text-align: center; */
     }
     #aboutMeCont span.label {
-        text-align: right;
+        /* text-align: right; */
         margin-right: 20px;
     }
     #aboutMeCont h2 {

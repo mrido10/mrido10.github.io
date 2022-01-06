@@ -21,6 +21,9 @@
     color: #2196F3;
 }
 
+span.blue {
+    color: #2196F3;
+}
 .about h3 {
     font-size: 24px;
     font-weight: 500;
@@ -30,8 +33,8 @@
 .about p, .about span, .about a {font-size: 14px;}
 
 .about p {
-    text-align: justify;
-    font-style: italic;
+    text-align: left;
+    /* font-style: italic; */
     margin-bottom: 30px;
 }
 

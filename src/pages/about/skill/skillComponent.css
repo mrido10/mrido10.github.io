@@ -2,7 +2,7 @@
     width: 75px;
     height: 75px;
     margin: 10px 30px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .cont1 .skillComp img {

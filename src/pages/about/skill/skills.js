@@ -12,6 +12,7 @@ import arduinoIcon from '../../../assets/images/icons/arduino.svg'
 import bootsrap from '../../../assets/images/icons/bootstrap.svg'
 import redis from '../../../assets/images/icons/redis.svg'
 import elasticSearch from '../../../assets/images/icons/elasticsearch.svg'
+import postgres from '../../../assets/images/icons/postgresql.svg'
 
 
 class Skills extends Component {
@@ -22,13 +23,14 @@ class Skills extends Component {
             {name: javascriptIcon, toolTip: 'Javascript'},
             {name: reactIcon, toolTip: 'React Js'},
             {name: mySqlIcon, toolTip: 'MySQL'},
+            {name: postgres, toolTip: 'PostgreSQL'},
+            {name: elasticSearch, toolTip: 'Elasticsearch'},
             {name: htmlIcon, toolTip: 'HTML5'},
             {name: cssIcon, toolTip: 'CSS3'},
-            {name: gitIcon, toolTip: 'GIT'},
-            {name: arduinoIcon, toolTip: 'Arduino'},
             {name: bootsrap, toolTip: 'Bootsrap'},
             {name: redis, toolTip: 'Redis'},
-            {name: elasticSearch, toolTip: 'Elasticsearch'},
+            {name: gitIcon, toolTip: 'GIT'},
+            {name: arduinoIcon, toolTip: 'Arduino'},            
         ]
     }
 

@@ -45,14 +45,25 @@ class AboutMe extends Component {
                 </div>
                 <div className='abtContentCont'>
                     <h2>ABOUT <span className='blue'>ME</span></h2>
-                    <p className='abtMe' data-aos='fade-right'>"Experienced in IT field since 2020. Skilled in Java, Golang, Javascript (React Js), Arduino, Database (mySql), HTML5, CSS3"</p>
-                    <div className='abtMe'>
+                    <p className='abtMe' data-aos='fade-right'>
+                        Hi, My name is <strong><span className='blue'>Muhammad Rido</span></strong><br></br>
+                        You can call me Rido, Edo, and anything you want<br></br>
+                        <br></br>
+                        I have experience as Fullstack and backend developer since 2020
+                        at one of the companies that developed a Distribution Management System application<br></br>
+                        <br></br>
+                        Since know the programming, I've been interested in web development.
+                        Now, i have skills and curently learning some skills for web development, like:
+                        Java, Golang, Javascript (React Js), Arduino, Databases (mySql, PostgeSQL, Elasticsearch), HTML5, CSS3, Bootstrap.
+                        This I do to be the best in me, I do what I love, and I love what I do, with the best of my heart.
+                    </p>
+                    {/* <div className='abtMe'>
                         {
                             this.state.aboutMe.map((val, idx) => {
                                 return this.showAbtMe(val, idx)
                             })
                         }
-                    </div>
+                    </div> */}
                     <div data-aos='fade-up' data-aos-duration='1700'><Link className='download' onClick={() => {window.open('file/Muhammad_Rido_CV.pdf')}}>Download CV</Link></div>
                 </div>
             </section>
