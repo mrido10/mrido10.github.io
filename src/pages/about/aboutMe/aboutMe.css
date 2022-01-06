@@ -109,9 +109,6 @@
     #aboutMeCont.cont1 {
         padding-bottom: 20px;
     }
-    #aboutMeCont p {
-        /* text-align: center; */
-    }
     #aboutMeCont span.label {
         /* text-align: right; */
         margin-right: 20px;
@@ -133,6 +130,10 @@
         width: 55vw;
         height: 0;
         padding-bottom: 55vw;
+    }
+
+    #aboutMeCont p {
+        text-align: center;
     }
 
     #aboutMeCont img {
