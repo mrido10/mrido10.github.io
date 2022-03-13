@@ -1,0 +1,33 @@
+.linkCont {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: 25px;
+    margin: 4px 0;
+}
+
+.linkCont .img {
+    height: 100%;
+    width: 25px;
+    margin-right: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkCont .img img {
+    height: 100%;
+}
+
+.linkCont a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkCont a:hover {
+    color: #2196F3;
+}

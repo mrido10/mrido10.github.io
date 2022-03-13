@@ -2,12 +2,13 @@ import {Route, Switch, HashRouter} from 'react-router-dom'
 import Home from './pages/home/home'
 import About from './pages/about/about'
 import NotFoundPage from './pages/notFound/notFound'
+import PortofolioModal from './pages/about/portofolio/portofolioModal'
 
 function App() {
   let route = [
     {link: '/', page: Home},
     {link: '/about', page: About},
-    // {link: '/resume', page: Resume}
+    {link: '/porto', page: PortofolioModal}
   ]
 
   return (

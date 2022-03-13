@@ -1,0 +1,40 @@
+{
+    "auth": {
+        "detail": "This application is authentication service that currently be used in money manager applications in other repositories on github.com/mrido10. It is possible that it can be used for other applications by adding some permissions into database",
+        "role": "Backend",
+        "technology": [
+            {
+                "src": "golang.svg",
+                "name": "Golang"
+            },
+            {
+                "src": "postgresql.svg",
+                "name": "PostgeSQL"
+            }
+        ],
+        "repo": "https://github.com/mrido10/auth"
+    },
+    "webPorto": {
+        "detail": "This is my portfolio web page. This website provides information about me, education, work experience, skills mastered and being studied, projects that have been made, and contact information. If you want to contact me, you can click on the 'Contact' section.",
+        "role": "Frontend",
+        "technology": [
+            {
+                "src": "javascript.svg",
+                "name": "Javasript"
+            },
+            {
+                "src": "html5.svg",
+                "name": "HTML"
+            },
+            {
+                "src": "css3.svg",
+                "name": "CSS"
+            }
+        ],
+        "lib": [
+            ""
+        ],
+        "repo": "https://github.com/mrido10/auth",
+        "web": "https://mrido10.github.io"
+    }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import ProfileImg from '../../../assets/images/profile.jpg'
+import ProfileImg from '../../../assets/images/profile.jpeg'
 import './aboutMe.css'
 
 class AboutMe extends Component {

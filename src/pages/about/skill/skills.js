@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SkillComponent from './skillComponent'
+import ImageWithToolTip from '../../../components/image'
 import javaIcon from '../../../assets/images/icons/java.svg'
 import golangIcon from '../../../assets/images/icons/golang.svg'
 import javascriptIcon from '../../../assets/images/icons/javascript.svg'
@@ -40,7 +40,7 @@ class Skills extends Component {
                 <h2>SKI<span className='blue'>LLS</span></h2>
                 {
                     this.state.skill.map((val, idx) => {
-                        return <SkillComponent skill={val.name} text={val.toolTip} index={idx}/>
+                        return <ImageWithToolTip src={val.name} toolTipText={val.toolTip} index={idx}/>
                         
                     })
                 }

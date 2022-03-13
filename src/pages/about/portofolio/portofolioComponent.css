@@ -1,25 +1,41 @@
 .cont1 .portoComp {
     position: relative;
     width: 300px;
-    height: 140px;
+    height: 200px;
     border-radius: 20px;
     background-color: #2A2D32;
     overflow: hidden;
     margin: 20px 5px;
 }
 
-.cont1 .portoComp img {
+.cont1 .portoComp .box-img {
     width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.cont1 .portoComp img {
+    width: 120%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .cont1 .portoComp .name {
     width: 100%;
     height: 50px;
-    padding: 5px 10px;
+    padding: 10px;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom, rgba(26, 29, 34, 0), rgba(26, 29, 34, 0.7), rgba(26, 29, 34, 1));
+    /* background-image: linear-gradient(to bottom, rgba(26, 29, 34, 0), rgba(26, 29, 34, 0.7), rgba(26, 29, 34, 1)); */
     position: absolute;
+    display: flex;
+    align-items: center;
     bottom: 0;
-    /* color: #2A2D32; */
+    font-size: 14px;
     color: #fff ;
 }

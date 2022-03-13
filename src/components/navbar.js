@@ -23,26 +23,6 @@ class Navbar extends Component {
         }
     }
 
-    navbarItem = (value) => {
-        if (value.name === 'Home') {
-            return (
-                <Link to={value.to}>
-                    <div className='item'>{value.name}</div>
-                </Link>
-            )
-        }
-        return(
-            <LinkScroll
-                activeClass='active'
-                to={value.to}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-            ><div className='item'>{value.name}</div></LinkScroll>
-        )
-    }
-
     handleActiveNavbarTogle = () => {
         let box = document.getElementById('navbarBox')
         let navbarBox = document.getElementById('itemBoxNavbar')
@@ -71,6 +51,8 @@ class Navbar extends Component {
         } else {
             if (this.state.navbarActive === 'active') {
                 box.style.width = '200px'
+            } else {
+                box.style.width = '0'
             }
         }
     }
@@ -112,7 +94,7 @@ class Navbar extends Component {
                 <div id='itemBoxNavbar' className='itemBoxNavbar' onClick={this.handleKeepNavbar}>
                     {
                         this.state.navbar.map((val) => {
-                            return this.navbarItem(val)
+                            return navbarItem(val)
                         })
                     }
                 </div>
@@ -123,3 +105,26 @@ class Navbar extends Component {
 }
 
 export default Navbar
+
+function navbarItem(props) {
+    if (props.name === 'Home') {
+        return (
+            <Link to={props.to} onClick={() => hideNavbar()}>
+                <div className='item'>{props.name}</div>
+            </Link>
+        )
+    }
+    return(
+        <LinkScroll activeClass='active' to={props.to} spy={true} smooth={true}
+            offset={-70} duration={500} onClick={() => hideNavbar()}>
+            <div className='item'>{props.name}</div>
+        </LinkScroll>
+    )
+}
+
+function hideNavbar() {
+    let box = document.getElementById('navbarBox')
+    let navbarBox = document.getElementById('itemBoxNavbar')
+    box.style.width = '0'
+    navbarBox.classList.remove('active')
+}
