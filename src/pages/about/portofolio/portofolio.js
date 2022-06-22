@@ -14,7 +14,7 @@ class Portofolio extends Component {
         this.state = {
             porto: [
                 {name: 'Authentication', img: authImage, key: "auth"},  
-                {name: 'Web Portofolio', img: webPorto, key: "webPorto"},  
+                // {name: 'Web Portofolio', img: webPorto, key: "webPorto"},  
             ],
             showDetail: false,
             portoDetail: {

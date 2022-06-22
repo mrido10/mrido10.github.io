@@ -15,7 +15,7 @@ class Navbar extends Component {
                 {name: 'About', to: 'aboutMeCont'},
                 {name: 'Education', to: 'eduCont'},
                 {name: 'Experience', to: 'expCont'},
-                {name: 'Skill', to: 'skillsCont'},
+                {name: 'Skills', to: 'skillsCont'},
                 {name: 'Portofolio', to: 'portoCont'},
                 {name: 'Contact', to: 'contactCont'}
             ],
@@ -125,6 +125,10 @@ function navbarItem(props) {
 function hideNavbar() {
     let box = document.getElementById('navbarBox')
     let navbarBox = document.getElementById('itemBoxNavbar')
-    box.style.width = '0'
-    navbarBox.classList.remove('active')
+    let windowWidth = window.matchMedia("(max-width: 1000px)")
+    if (windowWidth.matches) {
+        box.style.width = '0'
+        navbarBox.classList.remove('active')
+    }
+    
 }
