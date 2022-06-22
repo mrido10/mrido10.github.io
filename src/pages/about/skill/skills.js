@@ -31,7 +31,7 @@ class Skills extends Component {
             {name: debezium, toolTip: 'Debezium'},  
             {name: htmlIcon, toolTip: 'HTML5'},
             {name: cssIcon, toolTip: 'CSS3'},
-            {name: bootsrap, toolTip: 'Bootsrap'},
+            {name: bootsrap, toolTip: 'Bootstrap'},
             {name: redis, toolTip: 'Redis'},
             {name: gitIcon, toolTip: 'GIT'},
             {name: arduinoIcon, toolTip: 'Arduino'},                              
