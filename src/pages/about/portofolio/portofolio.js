@@ -3,6 +3,7 @@ import PortofolioComponent from './portofolioComponent'
 import PortofolioDetail from './portofolioModal'
 import authImage from '../../../assets/images/porto/auth.png'
 import webPorto from '../../../assets/images/porto/web-porto.png'
+import pathListener from '../../../assets/images/porto/path-listener.png'
 // import { Splide, SplideSlide } from '@splidejs/react-splide'
 // import '@splidejs/splide/dist/css/splide.min.css';
 
@@ -14,6 +15,7 @@ class Portofolio extends Component {
         this.state = {
             porto: [
                 {name: 'Authentication', img: authImage, key: "auth"},  
+                {name: 'Path Listener', img: pathListener, key: "pathListener"},  
                 // {name: 'Web Portofolio', img: webPorto, key: "webPorto"},  
             ],
             showDetail: false,

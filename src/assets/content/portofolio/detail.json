@@ -36,5 +36,16 @@
         ],
         "repo": "https://github.com/mrido10/auth",
         "web": "https://mrido10.github.io"
+    },
+    "pathListener": {
+        "detail": "Golang code to auto process files from directory",
+        "role": "Backend",
+        "technology": [
+            {
+                "src": "golang.svg",
+                "name": "Golang"
+            }
+        ],
+        "repo": "https://github.com/mrido10/path-listener"
     }
 }
