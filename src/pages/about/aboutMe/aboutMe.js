@@ -1,19 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import ProfileImg from '../../../assets/images/profile.jpeg'
+import JsonData from '../../../assets/json/aboutMe.json'
+import HTMLParser from 'html-react-parser'
 import './aboutMe.css'
 
 class AboutMe extends Component {
-    state = {
-        aboutMe: [
-            {label: 'Name', content: 'Muhammad Rido'},
-            {label: 'Birth Date', content: 'November, 10th 1995'},
-            {label: 'Email', content: 'muhammadrido19@gmail.com'},
-            {label: 'Web', content: 'mrido10.github.io'},
-            {label: 'Address', content: 'Tangerang Selatan, Indonesia'},
-        ]
-    }
-
     showAbtMe = (val, idx) => {
         return (
             <div className='aboutMe' data-aos='fade-up' data-aos-duration={1500 + (idx + 3) * 100}>
@@ -46,24 +38,8 @@ class AboutMe extends Component {
                 <div className='abtContentCont'>
                     <h2>ABOUT <span className='blue'>ME</span></h2>
                     <p className='abtMe' data-aos='fade-right'>
-                        Hi, My name is <strong><span className='blue'>Muhammad Rido</span></strong><br></br>
-                        You can call me Rido, Ido, Edo, and anything<br></br>
-                        <br></br>
-                        I have experience as Fullstack and backend developer since 2020
-                        at one of the companies that developed a Distribution Management System application<br></br>
-                        <br></br>
-                        Since know the programming, I've been interested in web development.
-                        Now, i have skills and curently learning some skills for web development, like:
-                        Golang, Java, Javascript (React Js), Database migration, Arduino, Databases (mySql, PostgeSQL, Elasticsearch), HTML5, CSS3, Bootstrap.
-                        This I do to be the best in me, I do what I love, and I love what I do, with the best of my heart.
+                        {HTMLParser(JsonData.aboutMe)}
                     </p>
-                    {/* <div className='abtMe'>
-                        {
-                            this.state.aboutMe.map((val, idx) => {
-                                return this.showAbtMe(val, idx)
-                            })
-                        }
-                    </div> */}
                     {/* <div data-aos='fade-up' data-aos-duration='1700'><Link className='download' onClick={() => {window.open('file/Muhammad_Rido_CV.pdf')}}>Download CV</Link></div> */}
                     <div data-aos='fade-up' data-aos-duration='1700'><Link className='download'>Download CV</Link></div>
                 </div>

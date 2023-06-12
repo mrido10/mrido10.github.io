@@ -4,6 +4,8 @@ import linkedinIcon from '../../../assets/images/icons/linkedin.svg'
 import githubIcon from '../../../assets/images/icons/github.svg'
 import instagramIcon from '../../../assets/images/icons/instagram.svg'
 import ContactComponent from './contactComponent'
+import JSONData from '../../../assets/json/contact.json'
+import env from '../../../assets/json/global.json'
 
 class Contact extends Component {
     state = {
@@ -20,8 +22,9 @@ class Contact extends Component {
             <section id='contactCont' className='cont1 contact'>
                 <h2>CONTACT<span className='blue'> ME</span></h2>
                 {
-                    this.state.icon.map((val, idx) => {
-                        return <ContactComponent contact={val.name} link={val.link} text={val.toolTip} index={idx}/>
+                    JSONData.contact.map((val, idx) => {
+                        const image = require(`../../../${env.pathIcon}${val.name}`)  
+                        return <ContactComponent contact={image.default} link={val.link} text={val.toolTip} index={idx}/>
                     })
                 }
             </section>

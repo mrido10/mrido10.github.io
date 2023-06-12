@@ -1,0 +1,24 @@
+{
+    "contact": [
+        {
+            "name": "linkedin.svg",
+            "link": "https://linkedin.com/in/muhammad-rido-533953140",
+            "toolTip": "LinkedIn: Muhammad Rido"
+        },
+        {
+            "name": "gmail.svg",
+            "link": "mailto:muhammadrido19@gmail.com",
+            "toolTip": "gmail: muhammadrido19@gmail.com"
+        },
+        {
+            "name": "github.svg",
+            "link": "https://github.com/mrido10/",
+            "toolTip": "GitHub: mrido10"
+        },
+        {
+            "name": "instagram.svg",
+            "link": "https://www.instagram.com/m.rido10/",
+            "toolTip": "Instagram: @mrido10"
+        }
+    ]
+}
