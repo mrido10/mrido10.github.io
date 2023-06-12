@@ -64,7 +64,8 @@ class AboutMe extends Component {
                             })
                         }
                     </div> */}
-                    <div data-aos='fade-up' data-aos-duration='1700'><Link className='download' onClick={() => {window.open('file/Muhammad_Rido_CV.pdf')}}>Download CV</Link></div>
+                    {/* <div data-aos='fade-up' data-aos-duration='1700'><Link className='download' onClick={() => {window.open('file/Muhammad_Rido_CV.pdf')}}>Download CV</Link></div> */}
+                    <div data-aos='fade-up' data-aos-duration='1700'><Link className='download'>Download CV</Link></div>
                 </div>
             </section>
         )
