@@ -5,9 +5,9 @@ class Education extends Component {
     state = {
         formal: [
             {year: '2014 - 2019', school: 'S1 Fisika - Universitas Jambi', line: 'ln'},
-            {year: '2011 - 2014', school: 'IPA - SMAN 3 Merangin', line: 'ln'},
-            {year: '2008 - 2011', school: 'SMPN 23 Merangin', line: 'ln'},
-            {year: '2002 - 2008', school: 'SDN 249 / VI Rawa Jaya I'}
+            {year: '2011 - 2014', school: 'IPA - SMAN 3 Merangin'},
+            // {year: '2008 - 2011', school: 'SMPN 23 Merangin', line: 'ln'},
+            // {year: '2002 - 2008', school: 'SDN 249 / VI Rawa Jaya I'}
         ],
         inFormal: [
             {

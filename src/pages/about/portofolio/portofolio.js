@@ -49,27 +49,9 @@ class Portofolio extends Component {
             return(
                 <section id='portoCont' className='cont1 porto'>
                     <h2>PORTO<span className='blue'>FOLIO</span></h2>
-                    {/* <Splide options={ {
-                        type: 'slide', 
-                        padding: { left: 10, right: 20 },
-                        fixedWidth: '300px',
-                        perPage: 4,
-                        autoWidth: true,
-                        width: '100%',
-                        rewind : true,
-                    } }>
-                    {this.state.porto.map((val) => {
+                    {this.state.porto.map((val, idx) => {
                         return (
-                            <SplideSlide>
-                                <PortofolioComponent handleClick={this.handleClickPorto} porto={val} />
-                            </SplideSlide>
-                        )
-                    })}
-                    </Splide> */}
-
-                    {this.state.porto.map((val) => {
-                        return (
-                            <PortofolioComponent handleClick={this.handleClickPorto} porto={val} />
+                            <PortofolioComponent handleClick={this.handleClickPorto} porto={val} index={idx} />
                         )
                     })}
 
