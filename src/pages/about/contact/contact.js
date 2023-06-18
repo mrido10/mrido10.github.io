@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ContactComponent from './contactComponent'
 import JSONData from '../../../assets/json/contact.json'
-import env from '../../../assets/json/global.json'
+import Env from '../../../assets/json/global.json'
 
 class Contact extends Component {
     render() {
@@ -10,7 +10,7 @@ class Contact extends Component {
                 <h2>CONTACT<span className='blue'> ME</span></h2>
                 {
                     JSONData.contact.map((val, idx) => {
-                        const image = require(`../../../${env.pathIcon}${val.name}`)  
+                        const image = require(`../../../${Env.pathIcon}${val.name}`)  
                         return <ContactComponent contact={image.default} link={val.link} text={val.toolTip} index={idx}/>
                     })
                 }

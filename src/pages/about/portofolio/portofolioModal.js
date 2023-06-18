@@ -5,11 +5,11 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import githubIcon from '../../../assets/images/icons/github.svg'
 import web from '../../../assets/images/icons/web.svg'
 import ImageWithToolTip from '../../../components/image'
-import env from '../../../assets/json/global.json'
+import Env from '../../../assets/json/global.json'
 import './portofolioModal.css'
 
 let PortofolioDetail = props => {
-    const image = require(`../../../${env.pathPorto}${props.img}`)
+    const image = require(`../../../${Env.pathPorto}${props.img}`)
     return(
         <div className='portoWrapper' onClick={() => {props.handleClickWrapper(false)}}>
             <div className='detailPortoWrapper' onClick={(e) => {e.stopPropagation()}}>
