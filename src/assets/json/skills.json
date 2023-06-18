@@ -1,12 +1,12 @@
 {
     "skill": [
         {
-            "name": "java.svg",
-            "toolTip": "Java"
-        },
-        {
             "name": "golang.svg",
             "toolTip": "Golang"
+        },
+        {
+            "name": "java.svg",
+            "toolTip": "Java"
         },
         {
             "name": "javascript.svg",
@@ -17,16 +17,28 @@
             "toolTip": "React Js"
         },
         {
-            "name": "mysql.svg",
-            "toolTip": "MySQL"
-        },
-        {
             "name": "postgresql.svg",
             "toolTip": "PostgreSQL"
         },
         {
+            "name": "mysql.svg",
+            "toolTip": "MySQL"
+        },
+        {
             "name": "elasticsearch.svg",
             "toolTip": "Elasticsearch"
+        },
+        {
+            "name": "redis.svg",
+            "toolTip": "Redis"
+        },
+        {
+            "name": "git.svg",
+            "toolTip": "GIT"
+        },
+        {
+            "name": "docker.svg",
+            "toolTip": "Docker"
         },
         {
             "name": "kafka.svg",
@@ -43,14 +55,6 @@
         {
             "name": "css3.svg",
             "toolTip": "CSS3"
-        },
-        {
-            "name": "redis.svg",
-            "toolTip": "Redis"
-        },
-        {
-            "name": "git.svg",
-            "toolTip": "GIT"
         }
     ]
 }
