@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.8545762b.chunk.css",
-    "main.js": "/static/js/main.56739f47.chunk.js",
-    "main.js.map": "/static/js/main.56739f47.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0cd09025.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0cd09025.js.map",
+    "main.js": "/static/js/main.e50ea237.chunk.js",
+    "main.js.map": "/static/js/main.e50ea237.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e8fe7659.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e8fe7659.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.534d0056.chunk.js": "/static/js/2.534d0056.chunk.js",
-    "static/js/2.534d0056.chunk.js.map": "/static/js/2.534d0056.chunk.js.map",
-    "static/js/3.d16ac13b.chunk.js": "/static/js/3.d16ac13b.chunk.js",
-    "static/js/3.d16ac13b.chunk.js.map": "/static/js/3.d16ac13b.chunk.js.map",
+    "static/js/2.f68898bb.chunk.js": "/static/js/2.f68898bb.chunk.js",
+    "static/js/2.f68898bb.chunk.js.map": "/static/js/2.f68898bb.chunk.js.map",
+    "static/js/3.809d9395.chunk.js": "/static/js/3.809d9395.chunk.js",
+    "static/js/3.809d9395.chunk.js.map": "/static/js/3.809d9395.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/main.8545762b.chunk.css.map": "/static/css/main.8545762b.chunk.css.map",
-    "static/js/2.534d0056.chunk.js.LICENSE.txt": "/static/js/2.534d0056.chunk.js.LICENSE.txt",
+    "static/js/2.f68898bb.chunk.js.LICENSE.txt": "/static/js/2.f68898bb.chunk.js.LICENSE.txt",
     "static/media/Montserrat-Black.ttf": "/static/media/Montserrat-Black.46e8b3d6.ttf",
     "static/media/Montserrat-BlackItalic.ttf": "/static/media/Montserrat-BlackItalic.4404f7c6.ttf",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.079ca05d.ttf",
@@ -54,6 +54,7 @@
     "static/media/bootstrap.svg": "/static/media/bootstrap.91aad92a.svg",
     "static/media/css3.svg": "/static/media/css3.3ec32022.svg",
     "static/media/debezium.svg": "/static/media/debezium.71eeb707.svg",
+    "static/media/docker.svg": "/static/media/docker.a2eecd96.svg",
     "static/media/elasticsearch.svg": "/static/media/elasticsearch.cf2b7ef1.svg",
     "static/media/git.svg": "/static/media/git.43d387b7.svg",
     "static/media/github.svg": "/static/media/github.035c3354.svg",
@@ -80,10 +81,10 @@
     "static/media/web.svg": "/static/media/web.7c206a23.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0cd09025.js",
+    "static/js/runtime-main.e8fe7659.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.534d0056.chunk.js",
+    "static/js/2.f68898bb.chunk.js",
     "static/css/main.8545762b.chunk.css",
-    "static/js/main.56739f47.chunk.js"
+    "static/js/main.e50ea237.chunk.js"
   ]
 }
