@@ -9,7 +9,8 @@ import Env from '../../../assets/json/global.json'
 import './portofolioModal.css'
 
 let PortofolioDetail = props => {
-    const image = require(`../../../${Env.pathPorto}${props.img}`)
+    const env = Env
+    const image = require(`../../../${env.pathPorto}${props.img}`)
     return(
         <div className='portoWrapper' onClick={() => {props.handleClickWrapper(false)}}>
             <div className='detailPortoWrapper' onClick={(e) => {e.stopPropagation()}}>

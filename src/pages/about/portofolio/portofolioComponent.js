@@ -3,7 +3,8 @@ import Env from '../../../assets/json/global.json'
 import './portofolioComponent.css'
 
 let PortofolioComponent = props => {
-    const image = require(`../../../${Env.pathPorto}${props.porto.img}`)  
+    const env = Env
+    const image = require(`../../../${env.pathPorto}${props.porto.img}`)  
     return(
         <div className='portoComp' onClick={() => {showModal(props.porto.key, props)}} data-aos='fade-left' data-aos-duration={1500 + (props.index * 15) * 100}>
             <div className='box-img'>
