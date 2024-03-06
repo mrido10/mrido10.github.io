@@ -14,7 +14,7 @@
         {
             "year": "March 2020 - May 2020",
             "school": "Fullstack Programmer - G2 Academy",
-            "detail": "IT bootcamp program organized by PT. Paramadaksa Teknologi Nusantara, in collaboration with G2 Academy"
+            "detail": ["IT bootcamp program organized by PT. Paramadaksa Teknologi Nusantara, in collaboration with G2 Academy"]
         }
     ]
 }

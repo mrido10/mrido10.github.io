@@ -47,5 +47,45 @@
             }
         ],
         "repo": "https://github.com/mrido10/path-listener"
+    },
+    "rijalfawwaz": {
+        "detail": "Web portofolio that contains details about herself, a YouTube list of YouTube channels, provides study classes, and also provides news, There is an admin dashboard to provide content on the website. The techstack using Golang as backend, React js (Vite) and using Tailwind CSS as frontend, Docker as Containerization, PostgreSQL as database to store content, Redis as chace, Nginx as web server, Discord as logging if any error, an youtube api to get data from Youtube channel",
+        "role": "Fullstack",
+        "technology": [
+            {
+                "src": "golang.svg",
+                "name": "Golang"
+            },
+            {
+                "src": "nginx.svg",
+                "name": "Nginx"
+            },
+            {
+                "src": "docker.svg",
+                "name": "Docker"
+            },{
+                "src": "postgresql.svg",
+                "name": "PostgreSQL"
+            },
+            {
+                "src": "redis.svg",
+                "name": "Redis"
+            },
+            {
+                "src": "vitejs.svg",
+                "name": "React Js (Vite)"
+            },
+            {
+                "src": "tailwind.svg",
+                "name": "Tailwind CSS"
+            },{
+                "src": "discord.svg",
+                "name": "Discord"
+            },{
+                "src": "youtube.svg",
+                "name": "Youtube API"
+            }
+        ],
+        "web": "https://rijalfawwaz.com"
     }
 }

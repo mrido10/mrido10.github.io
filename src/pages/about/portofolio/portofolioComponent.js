@@ -8,7 +8,7 @@ let PortofolioComponent = props => {
     return(
         <div className='portoComp' onClick={() => {showModal(props.porto.key, props)}} data-aos='fade-left' data-aos-duration={1500 + (props.index * 15) * 100}>
             <div className='box-img'>
-                <img className='img' src={image.default} alt='portofolio' />
+                <img className='img' src={image} alt='portofolio' />
             </div>
             <div className='name'>{props.porto.name}</div>
         </div>

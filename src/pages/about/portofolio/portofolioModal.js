@@ -8,6 +8,7 @@ import ImageWithToolTip from '../../../components/image'
 import Env from '../../../assets/json/global.json'
 import './portofolioModal.css'
 
+
 let PortofolioDetail = props => {
     const env = Env
     const image = require(`../../../${env.pathPorto}${props.img}`)
@@ -17,7 +18,7 @@ let PortofolioDetail = props => {
                 <XButton onClick={() => props.handleClickWrapper(false)} />
                 <div className='detailPortoCont'>
                     <div className='imgBox'>
-                        <img className='img' src={image.default} alt='portofolio'/>
+                        <img className='img' src={image} alt='portofolio'/>
                     </div>
                     <DetailModalComponent props={props} />  
                 </div>
@@ -61,7 +62,7 @@ function TechnologyComponent(data) {
             <h3>Technology</h3>
             <div>
                 {props.detailPorto !== undefined ? props.detailPorto.technology.map( val => {
-                    const img = require(`../../../assets/images/icons/${val.src}`).default
+                    const img = require(`../../../assets/images/icons/${val.src}`)
                     return (
                         <ImageWithToolTip src={img} toolTipText={val.name} aos='disable'
                             style={{width: '50px', height: '50px'}} styleBox={{margin: '0'}}/>

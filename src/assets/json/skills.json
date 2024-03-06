@@ -7,6 +7,9 @@
         {
             "name": "java.svg",
             "toolTip": "Java"
+        },{
+            "name": "linux.svg",
+            "toolTip": "Linux"
         },
         {
             "name": "javascript.svg",

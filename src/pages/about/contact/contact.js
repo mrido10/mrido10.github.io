@@ -12,7 +12,7 @@ class Contact extends Component {
                 {
                     JSONData.contact.map((val, idx) => {
                         const image = require(`../../../${env.pathIcon}${val.name}`)  
-                        return <ContactComponent contact={image.default} link={val.link} text={val.toolTip} index={idx}/>
+                        return <ContactComponent contact={image} link={val.link} text={val.toolTip} index={idx}/>
                     })
                 }
             </section>

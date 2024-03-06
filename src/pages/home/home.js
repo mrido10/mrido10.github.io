@@ -26,7 +26,7 @@ class Home extends Component {
                     <div className='homeContCtn'>
                         <h3 className='hello' data-aos='fade-right' data-aos-duration='1000' data-aos-easing='ease-in-sine'>Hello, I'am</h3>
                         <h1 className='name' data-aos='fade-right' data-aos-duration='1200' data-aos-easing='ease-in-sine'>MUHAMMAD <span className='blue'>RIDO</span></h1>
-                        <h2 className='job' data-aos='fade-right' data-aos-duration='1400' data-aos-easing='ease-in-sine'>Web Developer</h2>
+                        <h2 className='job' data-aos='fade-right' data-aos-duration='1400' data-aos-easing='ease-in-sine'>Backend Engineer</h2>
                         <div data-aos="fade-up" data-aos-duration='1500'><Link className='button' to='/about'><span>More About Me</span></Link></div>
                     </div>
                 </section>

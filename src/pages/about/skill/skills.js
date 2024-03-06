@@ -12,7 +12,7 @@ class Skills extends Component {
                 {
                     JSONData.skill.map((val, idx) => {
                         const image = require(`../../../${env.pathIcon}${val.name}`)  
-                        return <ImageWithToolTip src={image.default} toolTipText={val.toolTip} index={idx}/>
+                        return <ImageWithToolTip src={image} toolTipText={val.toolTip} index={idx}/>
                     })
                 }
             </section>

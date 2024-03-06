@@ -3,13 +3,28 @@
         {
             "year": "January, 2022 - Now",
             "work": "Backend developer - PT. Paramadaksa Teknologi Nusantara",
-            "detail": "Develop web application for Distribution Management System using Golang, and Database migration using Debezium",
+            "detail": [
+                "Rewrite existing web application for distribution management system using the golang programming language with the same business",
+                "Features development based on request from clients",
+                "Bug fixing based on reports provided, Maintenance application",
+                "Tuning programs that process takes a long time",
+                "Database migration, Contribute to manage small team (part of team) to handle bugs",
+                "Database migration",
+                "Contribute to manage small team (part of team) to handle bugs",
+                "Contribute as bug tracing from report on internal group"
+            ],
             "line": "ln"
         },
         {
             "year": "June, 2020 - January, 2022",
             "work": "Fullstack Programmer - PT. Paramadaksa Teknologi Nusantara",
-            "detail": "Develop web application for Distribution Management System using Java (Spring framework) and Javascript, Bug fixing, and Tuning"
+            "detail": [
+                "Develop web application for distribution management system using the Java(Spring framework) and Javascript",
+                "Features development based on request from clients",
+                "Bug fixing based on reports provided",
+                "Maintenance application",
+                "Tuning programs that process take a long time"
+            ]
         }
     ]
 }
