@@ -43,7 +43,7 @@ class AboutMe extends Component {
                     {/* <div data-aos='fade-up' data-aos-duration='1700'><Link className='download' onClick={() => {window.open('file/Muhammad_Rido_CV.pdf')}}>Download CV</Link></div> */}
                     <div data-aos='fade-up' data-aos-duration='1700'>
                         {/* <Link className='download'>Download CV</Link> */}
-                        <a className='download' href='https://1drv.ms/b/c/5f0a3b31475c2404/EQQkXEcxOwoggF8AAwAAAAAB48NLpyvSCwuWN5QJSXT4CA?e=EtQqpa' target='_blank'>Download CV</a>
+                        <a className='download' href='https://1drv.ms/b/c/5f0a3b31475c2404/EQQkXEcxOwoggF8AAwAAAAAB48NLpyvSCwuWN5QJSXT4CA?e=EtQqpa' target='_blank'>See my CV</a>
                     </div>
                 </div>
             </section>
