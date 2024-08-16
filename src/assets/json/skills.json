@@ -20,6 +20,22 @@
             "toolTip": "React Js"
         },
         {
+            "name": "grpc.svg",
+            "toolTip": "gRPC"
+        },
+        {
+            "name": "protobuf.svg",
+            "toolTip": "Protobuf"
+        },
+        {
+            "name": "nginx.svg",
+            "toolTip": "nginx"
+        },
+        {
+            "name": "cicd.svg",
+            "toolTip": "ci/cd"
+        },
+        {
             "name": "postgresql.svg",
             "toolTip": "PostgreSQL"
         },
