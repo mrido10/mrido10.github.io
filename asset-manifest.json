@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a7a84534.css",
-    "main.js": "/static/js/main.8bbc124f.js",
+    "main.js": "/static/js/main.2cf416d5.js",
     "static/js/453.0a464560.chunk.js": "/static/js/453.0a464560.chunk.js",
     "static/media/homePict.png": "/static/media/homePict.5b9be6b1657afeb4856f.png",
     "static/media/rijalfawwaz.png": "/static/media/rijalfawwaz.6af6d35684add04cc05f.png",
@@ -46,11 +46,16 @@
     "static/media/web-porto.png": "/static/media/web-porto.c3b91683e874a627375c.png",
     "static/media/index.cjs": "/static/media/index.671993152dc0f6e0b17a.cjs",
     "static/media/path-listener.png": "/static/media/path-listener.3d647a7e7fba12ae0aaa.png",
+    "static/media/path-listener.svg": "/static/media/path-listener.abffc4aed79896fdb372.svg",
     "static/media/kafka.svg": "/static/media/kafka.13a38c1cf34c709529b8.svg",
+    "static/media/logger.svg": "/static/media/logger.e1a26cff25e710ee5fb3.svg",
+    "static/media/payment.svg": "/static/media/payment.f4ace953dd8a360a6dc6.svg",
     "static/media/mysql.svg": "/static/media/mysql.c9286640a470004f40f8.svg",
     "static/media/postgresql.svg": "/static/media/postgresql.6d3129da3f1900ded5af.svg",
+    "static/media/grpc.svg": "/static/media/grpc.94ead362ad5682e83ee6.svg",
     "static/media/redis.svg": "/static/media/redis.ec242f3c46d8c90224c1.svg",
     "static/media/nginx.svg": "/static/media/nginx.aaccbe7bb34fb8019d0e.svg",
+    "static/media/auth.svg": "/static/media/auth.54ef939700713587fab6.svg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88.svg",
     "static/media/golang.svg": "/static/media/golang.83e241b0562e629eaec5.svg",
     "static/media/discord.svg": "/static/media/discord.3dbc20802379cc0c1e55.svg",
@@ -60,6 +65,7 @@
     "static/media/ubuntu.svg": "/static/media/ubuntu.003d7eb2ac69ade756d5.svg",
     "static/media/java.svg": "/static/media/java.5386b56c3206b6bd70b1.svg",
     "static/media/docker.svg": "/static/media/docker.a2eecd96da9f90e20b8d.svg",
+    "static/media/cicd.svg": "/static/media/cicd.655b7e78fdaa3a11ba7c.svg",
     "static/media/vitejs.svg": "/static/media/vitejs.716c8992aea4e52bd746.svg",
     "static/media/web.svg": "/static/media/web.7c206a23abd284e52f7082c1b759ba16.svg",
     "static/media/arduino.svg": "/static/media/arduino.87c37b3294d6e3d29829.svg",
@@ -75,15 +81,16 @@
     "static/media/wave.svg": "/static/media/wave.4af1d23719fb488dc13a.svg",
     "static/media/wave2.svg": "/static/media/wave2.483d096c3960f177d9b1.svg",
     "index.html": "/index.html",
+    "static/media/protobuf.svg": "/static/media/protobuf.39487da85a42a8581d36.svg",
     "static/media/css3.svg": "/static/media/css3.3ec320225ef851ed26cf.svg",
     "static/media/html5.svg": "/static/media/html5.c1bb84e022ca9d76984d.svg",
     "static/media/gmail.svg": "/static/media/gmail.224130983b3966a86bd1.svg",
     "main.a7a84534.css.map": "/static/css/main.a7a84534.css.map",
-    "main.8bbc124f.js.map": "/static/js/main.8bbc124f.js.map",
+    "main.2cf416d5.js.map": "/static/js/main.2cf416d5.js.map",
     "453.0a464560.chunk.js.map": "/static/js/453.0a464560.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a7a84534.css",
-    "static/js/main.8bbc124f.js"
+    "static/js/main.2cf416d5.js"
   ]
 }
