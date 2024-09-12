@@ -33,7 +33,7 @@
         },
         {
             "name": "cicd.svg",
-            "toolTip": "ci/cd"
+            "toolTip": "CI / CD"
         },
         {
             "name": "postgresql.svg",

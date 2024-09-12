@@ -2,11 +2,14 @@ import detailPorto from '../../../assets/content/portofolio/detail.json'
 import Env from '../../../assets/json/global.json'
 import './portofolioComponent.css'
 
-let PortofolioComponent = props => {
+const PortofolioComponent = props => {
     const env = Env
     const image = require(`../../../${env.pathPorto}${props.porto.img}`)  
     return(
-        <div className='portoComp' onClick={() => {showModal(props.porto.key, props)}} data-aos='fade-left' data-aos-duration={1500 + (props.index * 15) * 100}>
+        <div className='portoComp' 
+            onClick={() => {showModal(props.porto.key, props)}} 
+            data-aos='fade-right' 
+            data-aos-duration={1500 + (props.index * 150) * 100}>
             <div className='box-img'>
                 <img className='img' src={image} alt='portofolio' />
             </div>
@@ -16,7 +19,7 @@ let PortofolioComponent = props => {
 }
 export default PortofolioComponent
 
-function showModal(key, props) {
+const showModal = (key, props) => {
     let result = {
         img: props.porto.img,
         showModal: true,

@@ -5,13 +5,21 @@
             "img": "rijalfawwaz.png",
             "key": "rijalfawwaz"
         },{
+            "name": "Logger",
+            "img": "logger.svg",
+            "key": "logger"
+        },{
+            "name": "Payment",
+            "img": "payment.svg",
+            "key": "payment"
+        },{
             "name": "Authentication",
-            "img": "auth.png",
+            "img": "auth.svg",
             "key": "auth"
         },
         {
             "name": "Path Listener",
-            "img": "path-listener.png",
+            "img": "path-listener.svg",
             "key": "pathListener"
         }
     ]

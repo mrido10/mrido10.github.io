@@ -70,16 +70,13 @@
             },{
                 "src": "postgresql.svg",
                 "name": "PostgreSQL"
-            },
-            {
+            },{
                 "src": "redis.svg",
                 "name": "Redis"
-            },
-            {
+            },{
                 "src": "vitejs.svg",
                 "name": "React Js (Vite)"
-            },
-            {
+            },{
                 "src": "tailwind.svg",
                 "name": "Tailwind CSS"
             },{
@@ -91,5 +88,27 @@
             }
         ],
         "web": "https://rijalfawwaz.com"
+    },
+    "payment": {
+        "detail": "Golang service, implement Midtrans to initiate payment",
+        "role": "Backend",
+        "technology": [
+            {
+                "src": "golang.svg",
+                "name": "Golang"
+            }
+        ],
+        "repo": "https://github.com/mrido10/payment"
+    },
+    "logger": {
+        "detail": "Golang service, to logging like 'log' golang packager. This code can sehow info file like line position, function call, file name call",
+        "role": "Backend",
+        "technology": [
+            {
+                "src": "golang.svg",
+                "name": "Golang"
+            }
+        ],
+        "repo": "https://github.com/mrido10/ido-log"
     }
 }

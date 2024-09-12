@@ -9,7 +9,7 @@ import Env from '../../../assets/json/global.json'
 import './portofolioModal.css'
 
 
-let PortofolioDetail = props => {
+const PortofolioDetail = props => {
     const env = Env
     const image = require(`../../../${env.pathPorto}${props.img}`)
     return(
